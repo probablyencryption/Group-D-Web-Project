@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    background-color: #fef2e0;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: #2e1c01 !important;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #2e0f01 !important;
+    /* Gold color for hover state */
+}
+
+nav a.active {
+    color: #721919 !important;
+    /* Red color for active state */
+    position: relative;
+}
+
+#marquee {
+    background-color: #FFD700;
+    padding: 0.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: #2e1c01;
+    font-family: "Playwrite FR Trad", cursive;
+}
+
+#hero {
+    position: relative;
+    text-align: center;
+}
+
+#hero img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+button {
+    background-color: #0000FF;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.product-item {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+}
+
+.product-item img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.board img {
+    height: 200px;
+    width: 200px;
+    border-radius: 200px;
+    object-fit: cover;
+    background-color: #ddb06e;
+}
+
+footer {
+    background-color: #2e1c01;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+section#join-trend {
+    padding: 20px;
+    background-color: #2e1c01;
+    color: #ddb06e !important;
+}
+
+
+/* Events Page Styles */
+#events-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.event-card {
+    display: flex;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+}
+
+.event-card img {
+    width: 40%;
+    object-fit: cover;
+    height: 240px;
+}
+
+.event-details {
+    padding: 1.5rem;
+    flex: 1;
+}
+
+.event-details h2 {
+    color: #2e1c01;
+    margin-top: 0;
+    text-align: left;
+}
+
+.event-details .date {
+    font-weight: 600;
+    color: #2e1c01;
+    margin-bottom: 1rem;
+}
+
+.register-btn {
+    background-color: #2e1c01;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.register-btn:hover {
+    background-color: #2e1c01;
+}
+
+@media (max-width: 768px) {
+    .event-card {
+        flex-direction: column;
+    }
+
+    .event-card img {
+        width: 100%;
+        height: 200px;
+    }
+}
